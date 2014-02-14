@@ -1,12 +1,12 @@
 {
-  "name": "awesomeapp",
+  "name": "buzzer-quiz",
   "description": "",
   "version": "0.0.1",
   "private": false,
-  "author": "someuser",
+  "author": "toyamarinyon",
   "repository": {
     "type" : "git",
-    "url"  : "git   : //github.com/someuser/awesomeapp.git"
+    "url"  : "git   : //github.com/toyamarinyon/buzzer-quiz.git"
   },
   "engines": {
     "node" : "0.10.x",

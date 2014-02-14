@@ -103,7 +103,6 @@ module.exports = (grunt) ->
   grunt.loadNpmTasks "grunt-nodemon"
 
   grunt.registerTask "build", [
-    "config"
     "jade"
     "coffee"
     "compass"

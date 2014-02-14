@@ -1,6 +1,6 @@
 "use strict"
 
-app = angular.module(awesomeapp, ['ngRoute'])
+app = angular.module("buzzer-quiz", ['ngRoute'])
   .config ($routeProvider) ->
     $routeProvider
       .when "/",
