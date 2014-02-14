@@ -12,8 +12,8 @@ app.factory("socket", function($rootScope) {
         });
       });
     },
-    emmit: function(eventName, data, callback) {
-      return socket.emmit(eventName, data, function() {
+    emit: function(eventName, data, callback) {
+      return socket.emit(eventName, data, function() {
         var args;
         args = arguments;
         return $rootScope.$apply(function() {

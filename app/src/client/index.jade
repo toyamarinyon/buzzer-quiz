@@ -7,7 +7,10 @@ html(ng-app="buzzer-quiz")
 
   body
     div(ng-view)
-
+ 
+    // Socket.io
+    script(src='/socket.io/socket.io.js')
+      
     // Module dependencies.
     script(src='/angular/angular.min.js')
     script(src='/angular-animate/angular-animate.min.js')

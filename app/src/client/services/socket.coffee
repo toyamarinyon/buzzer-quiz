@@ -8,8 +8,8 @@ app.factory "socket", ($rootScope) ->
         args = arguments
         $rootScope.$apply ->
           callback.apply(socket, args)
-    emmit: (eventName, data, callback) ->
-      socket.emmit eventName, data,  ->
+    emit: (eventName, data, callback) ->
+      socket.emit eventName, data,  ->
         args = arguments
         $rootScope.$apply ->
           callback.apply(socket, args) if callback
