@@ -3,5 +3,7 @@
 app.controller "IndexController", ($scope, socket) ->
 
   $scope.hello = ->
-    socket.emit "awesome:handler",
-      name: "Mina"
+    socket.emit "answer"
+
+  socket.on "answer", ->
+    $scope.answered = true
