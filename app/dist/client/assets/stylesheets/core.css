@@ -7594,3 +7594,35 @@ button.close {
     display: none !important;
   }
 }
+/* line 3, ../../../../src/client/assets/stylesheets/core.sass */
+html, body, .view, .v-inner {
+  height: 100%;
+  min-height: 100%;
+}
+
+/* line 7, ../../../../src/client/assets/stylesheets/core.sass */
+.v-inner {
+  padding: 0 10%;
+  text-align: center;
+}
+
+/* line 14, ../../../../src/client/assets/stylesheets/core.sass */
+.playerColor.red {
+  background: #f7c9c4;
+}
+
+/* line 18, ../../../../src/client/assets/stylesheets/core.sass */
+section.answer.red {
+  color: #791b10;
+}
+
+/* line 20, ../../../../src/client/assets/stylesheets/core.sass */
+.answerSymbol {
+  font-size: 300px;
+  line-height: 0.9;
+}
+
+/* line 23, ../../../../src/client/assets/stylesheets/core.sass */
+.answerBody {
+  font-size: 30px;
+}

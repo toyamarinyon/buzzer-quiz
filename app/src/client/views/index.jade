@@ -1,3 +1,9 @@
-div(ng-class="{'answer':answered}")
-// h1 Hello World!
-a(ng-click="hello()") click
+.v-inner.playerColor(ng-class="[status,playerColor]", ng-click="hello()")
+ section.answer
+   .answerSymbol(ng-class="[playerColor]",ng-show="thinking") ?
+   .answerSymbol(ng-class="[playerColor]",ng-hide="thinking") !
+   .answerBody(ng-show="thinking").
+     答えがわかったら<br>
+     画面をタップ！
+   .answerBody(ng-hide="thinking").
+     答えて！

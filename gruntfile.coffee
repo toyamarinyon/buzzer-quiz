@@ -19,11 +19,11 @@ module.exports = (grunt) ->
           directoryConfig.appSrc+"/**/*.coffee"
         tasks:
           "coffee"
-      sass:
+      compass:
         files:
           directoryConfig.appSrc+"/**/*.sass"
         tasks:
-          "sass"
+          "compass"
       image:
         files:
           directoryConfig.appSrc+"/**/*.png"

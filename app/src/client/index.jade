@@ -2,25 +2,26 @@ doctype
 html(ng-app="buzzer-quiz")
   head
     title buzzer-quiz
-    link(rel='stylesheet', href='/font-awesome/css/font-awesome.min.css')
-    link(rel='stylesheet', href='/assets/stylesheets/core.css')
+    link(rel="stylesheet", href="/font-awesome/css/font-awesome.min.css")
+    link(rel="stylesheet", href="/assets/stylesheets/core.css")
+    meta(name="viewport", content="user-scalable=no")
 
   body
-    div(ng-view ng-class)
+    div.view(ng-view)
  
     // Socket.io
-    script(src='/socket.io/socket.io.js')
+    script(src="/socket.io/socket.io.js")
       
     // Module dependencies.
-    script(src='/angular/angular.min.js')
-    script(src='/angular-animate/angular-animate.min.js')
-    script(src='/angular-cookies/angular-cookies.min.js')
-    script(src='/angular-resource/angular-resource.min.js')
-    script(src='/angular-route/angular-route.min.js')
+    script(src="/angular/angular.min.js")
+    script(src="/angular-animate/angular-animate.min.js")
+    script(src="/angular-cookies/angular-cookies.min.js")
+    script(src="/angular-resource/angular-resource.min.js")
+    script(src="/angular-route/angular-route.min.js")
 
     // Initializing.
-    script(src='/bootstrap.js')
+    script(src="/bootstrap.js")
     // Load services.
-    script(src='/services/socket.js')
+    script(src="/services/socket.js")
     // Load controllers.
-    script(src='/controllers/index.js')
+    script(src="/controllers/index.js")

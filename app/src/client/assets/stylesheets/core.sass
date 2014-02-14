@@ -1,1 +1,24 @@
 @import bootstrap
+
+html, body, .view, .v-inner
+  height: 100%
+  min-height: 100%
+
+.v-inner
+  padding: 0 10%
+  text-align: center
+
+$red: #f7c9c4
+
+.playerColor
+  &.red
+    background: $red
+ 
+section.answer
+  &.red
+    color: darken($red, 60%)
+.answerSymbol
+  font-size: 300px
+  line-height: 0.9
+.answerBody
+  font-size: 30px
