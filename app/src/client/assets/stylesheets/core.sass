@@ -1,9 +1,58 @@
-@import bootstrap
+$border-radius-base: 0px
+$border-radius-large: 0px
+$border-radius-small: 0px
 
+$font-family-sans-serif: HelveticaNeue-UltraLight,'Open Sans Light', HelveticaNeue, 'Helvetica Neue', Helvetica, Arial, sans-serif
+$headings-font-weight: 100
+
+$padding-large-vertical: 4px
+$padding-large-horizontal: 38px
+$button-font-weight: 100
+
+$font-size-base: 16px
+$font-size-large: 30px
+
+$brand-primary: #3498db
+$brand-info: #52be7f
+
+$button-primary-border: #3498db
+$button-info-border: #52be7f
+
+@import bootstrap
+@import compass
+
+=gradient-top-lighten ($color : #666, $lighten: 5%)
+  background-color: $color
+  +filter-gradient(lighten($color, $lighten), $color,vertical)
+  +background-image(linear-gradient(lighten($color,$lighten) 0%, $color 100%))
+=gradient-bottom-darken ($color : #fff, $darken: 5%)
+  background-color: $color
+  +filter-gradient($color, darken($color, $darken), vertical)
+  +background-image(linear-gradient($color 0%, darken($color,$darken) 100%))
+
+body
+  +gradient-bottom-darken(#fff, 10%)
 html, body, .view, .v-inner
+  -webkit-font-smoothing: antialiased
   height: 100%
   min-height: 100%
+  font-weight: 100
 
+// home
+// ----------------------------
+.home
+  min-width: 500px
+  margin: 0 auto
+  text-align: center
+  header
+    margin: 4.0em 0 2.0em
+    h1
+      margin-bottom: .1em
+    .body-copy
+      font-size: 150%
+      margin-bottom: .4em
+    .help
+      text-align: left
 .v-inner
   padding: 0 10%
   text-align: center

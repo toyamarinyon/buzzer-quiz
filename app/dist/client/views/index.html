@@ -1,12 +1,35 @@
 
-<div ng-class="[status,playerColor]" ng-click="hello()" class="v-inner playerColor">
-  <section class="answer">
-    <div ng-class="[playerColor]" ng-show="thinking" class="answerSymbol">?</div>
-    <div ng-class="[playerColor]" ng-hide="thinking" class="answerSymbol">!</div>
-    <div ng-show="thinking" class="answerBody">
-      答えがわかったら<br>
-      画面をタップ！
+<div class="container-fluid home">
+  <header class="service-title">
+    <h1><img src="/assets/images/home-assets/logo.png"/></h1>
+    <div class="body-copy text-primary">Websocket based realtime web buzzer quiz sytem.</div>
+  </header>
+  <section class="mode-select">
+    <div class="row">
+      <div class="col-md-5 col-md-offset-1 col-xs-8 col-xs-offset-2">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="panel panel-default">
+              <div class="panel-body"><b>master mode</b> to make a new master.</div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12"><a href="#/master" class="btn btn-primary btn-lg">master mode</a></div>
+        </div>
+      </div>
+      <div class="col-md-5 col-md-offset-0 col-xs-8 col-xs-offset-2">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="panel panel-default">
+              <div class="panel-body"><b>slave mode</b> to add child of an existing master.</div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12"><a class="btn btn-success btn-lg">slave mode</a></div>
+        </div>
+      </div>
     </div>
-    <div ng-hide="thinking" class="answerBody">答えて！</div>
   </section>
 </div>
