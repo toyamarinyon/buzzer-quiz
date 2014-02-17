@@ -105,7 +105,6 @@ module.exports = (grunt) ->
   grunt.registerTask "build", [
     "jade"
     "coffee"
-    "imagemin"
     "compass"
   ]
   grunt.registerTask "default", ["build", "concurrent"]

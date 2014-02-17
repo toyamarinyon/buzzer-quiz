@@ -21,6 +21,17 @@ $button-info-border: #52be7f
 @import bootstrap
 @import compass
 
+=fullscreen
+  &:fullscreen
+    width: 100%
+    height: 100%
+  &:-webkit-full-screen
+    width: 100%
+    height: 100%
+  &:-moz-full-screen
+    width: 100%
+    height: 100%
+
 =gradient-top-lighten ($color : #666, $lighten: 5%)
   background-color: $color
   +filter-gradient(lighten($color, $lighten), $color,vertical)
@@ -30,13 +41,16 @@ $button-info-border: #52be7f
   +filter-gradient($color, darken($color, $darken), vertical)
   +background-image(linear-gradient($color 0%, darken($color,$darken) 100%))
 
+[class^="icon-"] + span,
+[class*=" icon-"] + span
+  margin-left: .5em
+
 body
   +gradient-bottom-darken(#fff, 10%)
 html, body, .view, .v-inner
   -webkit-font-smoothing: antialiased
-  height: 100%
-  min-height: 100%
   font-weight: 100
+  min-height: 100%
 
 // home
 // ----------------------------
@@ -53,7 +67,9 @@ html, body, .view, .v-inner
       margin-bottom: .4em
     .help
       text-align: left
-  .mode-select .row 
+  .row 
+    margin: .5em 0
+
 
 .v-inner
   padding: 0 10%
@@ -74,3 +90,7 @@ section.answer
   line-height: 0.9
 .answerBody
   font-size: 100px
+
+.el-fullscreen
+  width: 100%
+  height: 100%
