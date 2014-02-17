@@ -13,7 +13,7 @@ app = angular.module("buzzer-quiz", ['ngRoute', 'FSAngular']).config(function($r
     controller: "SlaveController"
   }).when("/slave/:slaveID", {
     templateUrl: "views/slave-desc.html",
-    controller: "IndexController"
+    controller: "SlaveController"
   }).otherwise({
     redirectTo: "/"
   });
