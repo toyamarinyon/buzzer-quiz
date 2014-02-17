@@ -1,0 +1,12 @@
+
+<div ng-class="[status,playerColor]" ng-click="hello()" class="v-inner playerColor">
+  <section class="answer">
+    <div ng-class="[playerColor]" ng-show="thinking" class="answerSymbol">?</div>
+    <div ng-class="[playerColor]" ng-hide="thinking" class="answerSymbol">!</div>
+    <div ng-show="thinking" class="answerBody">
+      答えがわかったら<br>
+      画面をタップ！
+    </div>
+    <div ng-hide="thinking" class="answerBody">答えて！</div>
+  </section>
+</div>
