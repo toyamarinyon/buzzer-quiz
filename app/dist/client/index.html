@@ -4,9 +4,9 @@
     <title>buzzer-quiz</title>
     <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="/assets/stylesheets/core.css">
-    <meta name="viewport" content="user-scalable=no">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
   </head>
-  <body>
+  <body ng-class="[status,playerColor]" ng-click="hello()" class="playerColor">
     <div ng-view class="view"></div>
     <!-- Socket.io-->
     <script src="/socket.io/socket.io.js"></script>

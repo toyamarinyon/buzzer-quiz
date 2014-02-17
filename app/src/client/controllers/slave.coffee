@@ -1,6 +1,11 @@
 "use strict"
 
-app.controller "SlaveController", ($scope, $location, $routeParams, socket) ->
+app.controller "SlaveNewController", ($scope, $location, $routeParams, socket) ->
+
+  $scope.submit = ->
+    $location.path("/slave/#{this.masterCode}")
+
+app.controller "SlaveDescController", ($scope, $location, $routeParams, socket) ->
 
   $scope.submit = ->
     $location.path("/slave/#{this.masterCode}")

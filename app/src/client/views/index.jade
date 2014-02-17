@@ -1,12 +1,13 @@
-.container.home
+.container.home.text-center
   header.service-title
-    h1
-      img(src="/assets/images/home-assets/logo.png")
+    h1.center-block
+      img.visible-md.visible-lg.center-block(src="/assets/images/home-assets/logo.png")
+      img.visible-xs.visible-sm.center-block(src="/assets/images/home-assets/minilogo.png")
     .body-copy.text-primary Websocket based realtime web buzzer quiz sytem.
 
   section.mode-select
     .row
-      .col-md-5.col-md-offset-1.col-xs-8.col-xs-offset-2
+      .col-md-5.col-md-offset-1.col-xs-12.col-xs-offset-0
         .row
           .col-md-12
             .panel.panel-default
@@ -15,7 +16,7 @@
         .row
           .col-md-12
             a.btn.btn-primary.btn-lg(href="#/master") master mode
-      .col-md-5.col-md-offset-0.col-xs-8.col-xs-offset-2
+      .col-md-5.col-md-offset-0.col-xs-12.col-xs-offset-0
         .row
           .col-md-12
             .panel.panel-default
@@ -23,4 +24,4 @@
                 <b>slave mode</b> to add child of an existing master.
         .row
           .col-md-12
-            a.btn.btn-success.btn-lg(href="#/slave") slave mode
+            a.btn.btn-success.btn-lg(href="#/slave/new") slave mode

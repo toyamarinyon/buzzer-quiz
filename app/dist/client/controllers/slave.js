@@ -1,5 +1,11 @@
 "use strict";
-app.controller("SlaveController", function($scope, $location, $routeParams, socket) {
+app.controller("SlaveNewController", function($scope, $location, $routeParams, socket) {
+  return $scope.submit = function() {
+    return $location.path("/slave/" + this.masterCode);
+  };
+});
+
+app.controller("SlaveDescController", function($scope, $location, $routeParams, socket) {
   $scope.submit = function() {
     return $location.path("/slave/" + this.masterCode);
   };

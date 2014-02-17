@@ -9,11 +9,11 @@ app = angular.module("buzzer-quiz", ['ngRoute','FSAngular'])
       .when "/master",
         templateUrl: "views/master.html"
         controller : "MasterController"
-      .when "/slave",
-        templateUrl: "views/slave.html"
-        controller : "SlaveController"
+      .when "/slave/new",
+        templateUrl: "views/slave/new.html"
+        controller : "SlaveNewController"
       .when "/slave/:slaveID",
-        templateUrl: "views/slave-desc.html"
-        controller : "SlaveController"
+        templateUrl: "views/slave/desc.html"
+        controller : "SlaveDescController"
       .otherwise
         redirectTo: "/"

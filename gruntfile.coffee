@@ -88,9 +88,14 @@ module.exports = (grunt) ->
 
 
     concurrent:
-      tasks: ["nodemon", "watch"]
-      options:
-        logConcurrentOutput: true
+      dev:
+        tasks: ["nodemon", "watch"]
+        options:
+          logConcurrentOutput: true
+      build:
+        tasks: ["jade", "coffee", "compass", "imagemin"]
+        options:
+          logConcurrentOutput: true
     
 
   grunt.loadNpmTasks "grunt-contrib-watch"
@@ -102,9 +107,5 @@ module.exports = (grunt) ->
   grunt.loadNpmTasks "grunt-concurrent"
   grunt.loadNpmTasks "grunt-nodemon"
 
-  grunt.registerTask "build", [
-    "jade"
-    "coffee"
-    "compass"
-  ]
-  grunt.registerTask "default", ["build", "concurrent"]
+  grunt.registerTask "build", ["concurrent:build"]
+  grunt.registerTask "default", ["build", "concurrent:dev"]
