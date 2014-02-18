@@ -1,0 +1,23 @@
+.container.home.text-center
+  header.service-title
+    h1.center-block
+      img.visible-md.visible-lg.center-block(src="/assets/images/home-assets/logo.png")
+      img.visible-xs.visible-sm.center-block(src="/assets/images/home-assets/minilogo.png")
+    .row
+      .col-md-2.col-md-offset-5
+        .row.bg-primary.
+          slave mode
+
+  section.slave-list
+    .row
+      .col-md-6.col-md-offset-3
+        .panel.panel-default
+          .panel-body
+            form.form-horizontal(ng-submit="submit()")
+              .form-group
+                label.col-sm-4.control-label Master Code
+                .col-sm-8
+                  input.form-control(type="text", placeholder="MasterCode", ng-model="masterCode")
+              .form-group
+                .col-sm-offset-2.col-sm-8
+                  button.btn.btn-info(type="submit") connect
