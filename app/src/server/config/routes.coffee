@@ -3,5 +3,5 @@
 module.exports = (app) ->
 
   # root
-  app.get "/", (req, res) ->
+  app.get "/master/new", (req, res) ->
     res.send "Hello World"

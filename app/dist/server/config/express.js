@@ -54,13 +54,13 @@ module.exports = function(app, passport, db, config) {
       }
       console.error(err.stack);
       res.status(500);
-      return res.render("500", {
-        error: err.stack
-      });
+      res.send("500");
+      return console.log(err.stack);
     });
     return app.use(function(req, res, next) {
       res.status(404);
-      return res.render("404", {
+      res.send("404");
+      return console.log({
         url: req.originalUrl,
         error: "Not found"
       });

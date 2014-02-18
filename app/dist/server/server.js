@@ -34,13 +34,11 @@ require("./models/user");
 
 require("./config/passport")(passport, config);
 
-require("./config/routes");
-
-require("./config/sockets");
-
 app = express();
 
 require("./config/express")(app, passport, db, config);
+
+require("./config/routes")(app);
 
 server = require("http").createServer(app);
 
